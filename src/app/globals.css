@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 2, 6, 23;
+  /* Darker, deeper slate */
+}
+
+* {
+  letter-spacing: -0.015em;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+}
+
+/* Apple Typography Utility */
+.text-apple-title {
+  @apply font-black tracking-tighter;
+}
+
+.text-apple-metric {
+  @apply font-bold tracking-tight;
+}
+
+.text-apple-label {
+  @apply font-medium tracking-normal text-slate-400;
+}
+
+.text-apple-caption {
+  @apply text-[10px] font-black uppercase tracking-[0.2em] text-slate-500;
+}
+
+/* Apple Vibrancy Effect */
+.vibrant-text {
+  @apply text-white/60 mix-blend-plus-lighter;
+}
+
+.glass-morphism {
+  @apply backdrop-blur-3xl bg-slate-900/60 border border-white/10;
+}
+
+/* Optimize scrollbars for mobile */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
