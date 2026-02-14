@@ -8,7 +8,6 @@ export const metadata: Metadata = {
     title: 'Alfalah Wallet - Credit Card Debt Simulator',
     description: 'Track credit card interest and project future debt for Bank Alfalah Visa Platinum',
     manifest: '/manifest.json',
-    themeColor: '#6366F1',
     appleWebApp: {
         capable: true,
         statusBarStyle: 'default',
@@ -17,6 +16,7 @@ export const metadata: Metadata = {
 }
 
 export const viewport = {
+    themeColor: '#6366F1',
     width: 'device-width',
     initialScale: 1,
     maximumScale: 1,
